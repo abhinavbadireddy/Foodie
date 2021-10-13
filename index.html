@@ -31,7 +31,7 @@
 
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-          <a class="navbar-brand" id="ac" href="#"></a>
+          <a class="navbar-brand" id="foodie" href="#"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -58,6 +58,8 @@
               <li class="nav-btn">
                 <button type="button" class="btn btn-light sbtn1">Sign In</button>
               </li>
+              <div class="toggle">
+              </div>
           </div>
         </div>
       </nav>
@@ -158,6 +160,13 @@
     <i class="social-icon fas fa-envelope"></i>
     <!-- <p class="copyright">© Copyright 2021 </p> -->
   </footer>
+
+  <script>
+    const body = document.querySelector('body');
+    document.querySelector('.toggle').onclick = function(){
+      body.classList.toggle('light')
+    }
+  </script>
 
   <script type="text/javascript" src="vanilla-tilt.min.js"></script>
   <script type="text/javascript">
